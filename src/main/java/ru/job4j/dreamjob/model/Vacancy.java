@@ -12,9 +12,11 @@ public class Vacancy {
 
     private LocalDateTime creationDate;
 
-    public Vacancy(int id, String title) {
+    public Vacancy(int id, String title, String description, LocalDateTime date) {
         this.id = id;
         this.title = title;
+        this.description = description;
+        this.creationDate = date;
     }
 
     public int getId() {
