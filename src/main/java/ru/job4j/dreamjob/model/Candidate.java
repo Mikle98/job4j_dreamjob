@@ -12,9 +12,11 @@ public class Candidate {
 
     private LocalDateTime creationDate;
 
-    public Candidate(int id, String name) {
+    public Candidate(int id, String name, String description, LocalDateTime date) {
         this.id = id;
         this.name = name;
+        this.description = description;
+        this.creationDate = date;
     }
 
     public int getId() {
