@@ -10,7 +10,11 @@ public class Candidate {
 
     private String description;
 
-    private LocalDateTime creationDate;
+    private LocalDateTime creationDate = LocalDateTime.now();
+
+    public Candidate() {
+        /*empty constructor*/
+    }
 
     public Candidate(int id, String name, String description, LocalDateTime date) {
         this.id = id;
