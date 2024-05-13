@@ -10,7 +10,11 @@ public class Vacancy {
 
     private String description;
 
-    private LocalDateTime creationDate;
+    private LocalDateTime creationDate = LocalDateTime.now();
+
+    public Vacancy() {
+        /*empty constructor*/
+    };
 
     public Vacancy(int id, String title, String description, LocalDateTime date) {
         this.id = id;
