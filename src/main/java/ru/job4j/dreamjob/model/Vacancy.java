@@ -12,15 +12,26 @@ public class Vacancy {
 
     private LocalDateTime creationDate = LocalDateTime.now();
 
+    private boolean visible;
+
     public Vacancy() {
         /*empty constructor*/
     };
 
-    public Vacancy(int id, String title, String description, LocalDateTime date) {
+    public Vacancy(int id, String title, String description, LocalDateTime date, boolean visible) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.creationDate = date;
+        this.visible = visible;
+    }
+
+    public boolean getVisible() {
+        return visible;
+    }
+
+    public void setVisible(boolean visible) {
+        this.visible = visible;
     }
 
     public int getId() {
