@@ -14,16 +14,28 @@ public class Vacancy {
 
     private boolean visible;
 
+    private int cityId;
+
     public Vacancy() {
         /*empty constructor*/
     };
 
-    public Vacancy(int id, String title, String description, LocalDateTime date, boolean visible) {
+    public Vacancy(int id, String title, String description, LocalDateTime date, boolean visible,
+                   int cityId) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.creationDate = date;
         this.visible = visible;
+        this.cityId = cityId;
+    }
+
+    public int getCityId() {
+        return cityId;
+    }
+
+    public void setCityId(int cityId) {
+        this.cityId = cityId;
     }
 
     public boolean getVisible() {

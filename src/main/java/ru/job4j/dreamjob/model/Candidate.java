@@ -12,15 +12,18 @@ public class Candidate {
 
     private LocalDateTime creationDate = LocalDateTime.now();
 
+    private int cityId;
+
     public Candidate() {
         /*empty constructor*/
     }
 
-    public Candidate(int id, String name, String description, LocalDateTime date) {
+    public Candidate(int id, String name, String description, LocalDateTime date, int cityId) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.creationDate = date;
+        this.cityId = cityId;
     }
 
     public int getId() {
@@ -70,5 +73,13 @@ public class Candidate {
     @Override
     public int hashCode() {
         return Objects.hash(id);
+    }
+
+    public int getCityId() {
+        return cityId;
+    }
+
+    public void setCityId(int cityId) {
+        this.cityId = cityId;
     }
 }
