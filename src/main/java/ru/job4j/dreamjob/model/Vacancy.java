@@ -16,18 +16,30 @@ public class Vacancy {
 
     private int cityId;
 
+    private int fileId;
+
     public Vacancy() {
         /*empty constructor*/
     };
 
-    public Vacancy(int id, String title, String description, LocalDateTime date, boolean visible,
-                   int cityId) {
+    public Vacancy(int id, String title, String description,
+                   LocalDateTime date, boolean visible, int cityId,
+                   int fileId) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.creationDate = date;
         this.visible = visible;
         this.cityId = cityId;
+        this.fileId = fileId;
+    }
+
+    public int getFileId() {
+        return fileId;
+    }
+
+    public void setFileId(int fileId) {
+        this.fileId = fileId;
     }
 
     public int getCityId() {
