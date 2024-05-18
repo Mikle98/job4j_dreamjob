@@ -17,10 +17,10 @@ public class SimpleVacancyService implements VacancyService {
 
     private final FileService fileService;
 
-    private SimpleVacancyService(VacancyRepository vacancyRepository,
+    private SimpleVacancyService(VacancyRepository sql2oVacancyRepository,
                                  FileService fileService) {
         this.fileService = fileService;
-        this.vacancyRepository = vacancyRepository;
+        this.vacancyRepository = sql2oVacancyRepository;
     }
 
     @Override
