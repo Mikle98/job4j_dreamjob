@@ -12,12 +12,6 @@ import javax.servlet.http.HttpSession;
 public class IndexController {
     @GetMapping({"/", "/index"})
     public String getIndex(Model model, HttpSession session) {
-        var user = (User) session.getAttribute("user");
-        if (user == null) {
-            user = new User();
-            user.setName("Гость");
-        }
-        model.addAttribute("user", user);
         return "index";
     }
 }
