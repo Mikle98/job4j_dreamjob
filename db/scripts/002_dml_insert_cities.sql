@@ -1,3 +1,3 @@
-insert into cities(name) values('Москва');
-insert into cities(name) values('Санкт-Петербург');
-insert into cities(name) values('Екатеринбург');
+insert into cities(name) values('РњРѕСЃРєРІР°');
+insert into cities(name) values('РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРі');
+insert into cities(name) values('Р•РєР°С‚РµСЂРёРЅР±СѓСЂРі');

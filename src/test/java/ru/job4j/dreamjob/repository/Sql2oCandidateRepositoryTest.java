@@ -97,7 +97,7 @@ class Sql2oCandidateRepositoryTest {
         var creationDate = now().truncatedTo(ChronoUnit.MINUTES);
         var candidate = sql2oCandidateRepository.save(new Candidate(0, "name", "description", creationDate, 1, file.getId()));
         var updatedCandidate = new Candidate(
-                candidate.getId(), "new name", "new description", creationDate.plusDays(1),
+                candidate.getId(), "new name", "new description", candidate.getCreationDate(),
                 1, file.getId()
         );
         var isUpdated = sql2oCandidateRepository.update(updatedCandidate);
